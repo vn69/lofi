@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "global": "^4.4.0",
+    "node-sass": "^7.0.1",
+    "sass": "^1.46.0"
+  }
+}

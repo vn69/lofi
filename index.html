@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reponsive.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+
+  <title>Lofi</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-wrap">
+      <img src="./assets/image/logo.gif" alt="" class="header__logo hover hide-when-zoom">
+      <ul class="header__links hide-when-zoom">
+        <li><button class="btn btn-link how-it-works-btn">how it works</button></li>
+        <li><button class="btn btn-link">Pricing</button></li>
+        <li><button class="btn btn-link">contact us</button></li>
+        <li class="drop-down">
+          <button class="btn btn-link">more</button>
+          <div class="drop-down__wrap">
+            <button class="btn btn-link">About Us</button>
+            <button class="btn btn-link">Submissions</button>
+            <button class="btn btn-link">Spotyfi</button>
+          </div>
+        </li>
+        <li><button class="btn btn-link">merch</button></li>
+      </ul>
+      <ul class="header__links hide-when-zoom ml-auto">
+        <li><button class="btn btn-s rain-btn">rain</button></li>
+        <li><button class="btn btn-s light-btn">light</button></li>
+        <li><button class="btn btn-s zoom-btn">zoom</button></li>
+        <li><button class="btn btn-s">share</button></li>
+        <li><button class="btn sign-up-btn hide-when-zoom">sign up</button></li>
+        <li><button class="btn btn-link sign-in-btn hide-when-zoom">login</button></li>
+      </ul>
+    </div>
+  </header>
+  <main class="hide-scroll">
+    <video class="bg-video bg-video-light active" src="./assets/video/light.mp4" preload="auto" loop playsinline
+      webkit-playsinline x5-playsinline autoplay muted></video>
+    <video class="bg-video bg-video-night" src="./assets/video/night.mp4" preload="auto" loop playsinline
+      webkit-playsinline x5-playsinline autoplay muted></video>
+    <video class="bg-video bg-video-light-rain" src="./assets/video/light-rain.mp4" preload="auto" loop playsinline
+      webkit-playsinline x5-playsinline autoplay muted></video>
+    <video class="bg-video bg-video-night-rain" src="./assets/video/night-rain.mp4" preload="auto" loop playsinline
+      webkit-playsinline x5-playsinline autoplay muted></video>
+
+    <div class="music-control">
+      <img src="./assets/icon/prev.svg" alt="" class="svg-icon svg-prev hover">
+      <img src="./assets/icon/play.svg" alt="" class="svg-icon svg-play hover">
+      <img src="./assets/icon/next.svg" alt="" class="svg-icon svg-next hover">
+    </div>
+  </main>
+
+  <!-- modal pricing -->
+  <div class="modal-overlay">
+    <div class="modal-center hide-scroll pricing-modal">
+      <div class="modal-center__close">
+        <img class="hover" onclick="closeModal()" src="./assets/icon/close.svg" alt="">
+      </div>
+      <div class="modal-center__body">
+        <div class="row h-100">
+          <div class="col-6 pay-chose-wrap">
+            <h2 class="title">
+              Get more done with premium
+            </h2>
+            <div class="row">
+              <div class="col-6 box">
+                <h2 class="title">Basic</h2>
+                <div class="money-wrap">
+                  <span class="money">$0</span class="time"><span>/mo</span>
+                </div>
+                <div class="btn btn-primay">Use Basic</div>
+                <div class="des">*7-Day money back guarantee.
+                  Cancel anytime.</div>
+                <ul>
+                  <li class="item">
+                    <img src="" alt="" class="svg-icon">
+                    <span>Ad-Free</span>
+                  </li>
+                  <li class="item">
+                    <img src="" alt="" class="svg-icon">
+                    <span>Unlimited Music Streaming</span>
+                  </li>
+                  <li class="item">
+                    <img src="" alt="" class="svg-icon">
+                    <span>2 Artworks scenes</span>
+                  </li>
+                  <li class="item">
+                    <img src="" alt="" class="svg-icon">
+                    <span>3 Ambient Sounds</span>
+                  </li>
+                  <li class="item">
+                    <img src="" alt="" class="svg-icon">
+                    <span>Ad-Free</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6 box">
+                <h2 class="title">Basic</h2>
+                <div class="money-wrap">
+                  <span class="money">$0</span class="time"><span>/mo</span>
+                </div>
+                <div class="btn btn-primay">Use Basic</div>
+                <div class="des">*7-Day money back guarantee.
+                  Cancel anytime.</div>
+                <ul>
+                  <li class="item">
+                    <img src="" alt="" class="svg-icon">
+                    <span>Ad-Free</span>
+                  </li>
+                  <li class="item">
+                    <img src="" alt="" class="svg-icon">
+                    <span>Unlimited Music Streaming</span>
+                  </li>
+                  <li class="item">
+                    <img src="" alt="" class="svg-icon">
+                    <span>2 Artworks scenes</span>
+                  </li>
+                  <li class="item">
+                    <img src="" alt="" class="svg-icon">
+                    <span>3 Ambient Sounds</span>
+                  </li>
+                  <li class="item">
+                    <img src="" alt="" class="svg-icon">
+                    <span>Ad-Free</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <h2 class="title">Join the lofi.co family</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- modal signup -->
+  <div class="modal hide-scroll sign-up-modal">
+    <div class="modal__close">
+      <img class="hover" onclick="closeModal()" src="./assets/icon/close.svg" alt="">
+    </div>
+    <div class="modal__body">
+      <img src="./assets/image/logo.gif" alt="" class="logo">
+      <h2 class="title">Nice to meet you!</h2>
+      <div class="des">Sign up for a free account.</div>
+      <div class="input-wrap">
+        <div class="input-group">
+          <input type="text" placeholder="Username">
+          <div></div>
+        </div>
+        <div class="input-group">
+          <input type="text" placeholder="Email">
+          <div></div>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password">
+          <div></div>
+        </div>
+      </div>
+      <div class="s-text">By signing up, you agree to our</div>
+      <div class="s-text link hover">Privacy Policy & Terms of Service</div>
+      <button class="btn btn-primary">Sign Up</button>
+      <p>Already have an account? <span class="link hover change-to-sign-in"> Log In</span></p>
+    </div>
+  </div>
+
+  <!-- modal signin -->
+  <div class="modal hide-scroll sign-in-modal">
+    <div class="modal__close">
+      <img class="hover" onclick="closeModal()" src="./assets/icon/close.svg" alt="">
+    </div>
+    <div class="modal__body">
+      <img src="./assets/image/logo.gif" alt="" class="logo">
+      <h2 class="title">Welcome back!</h2>
+      <div class="des">Log In to your account.</div>
+      <div class="input-wrap">
+        <div class="input-group">
+          <input type="text" placeholder="Email">
+          <div></div>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Password">
+          <div></div>
+        </div>
+      </div>
+      <button class="btn btn-primary">Login</button>
+      <div class="link hover">Forgot password?</div>
+      <p>Don't have an account? <span class="link hover change-to-sign-up"> Sign Up for free</span></p>
+    </div>
+  </div>
+
+  <!-- modal how it works -->
+  <div class="modal modal-effect hide-scroll how-it-works-modal">
+    <div class="modal__close">
+      <img class="hover" onclick="closeModal()" src="./assets/icon/close.svg" alt="">
+    </div>
+    <div class="modal__body">
+      <div class="slide-wrap">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="./assets/image/logo.gif" alt="">
+          </div>
+          <div class="item">
+            <video class="bg-video bg-video-night-rain" src="./assets/video/Video 1.mp4" preload="auto" loop playsinline
+              webkit-playsinline x5-playsinline autoplay muted></video>
+          </div>
+          <div class="item">
+            <video class="bg-video bg-video-night-rain" src="./assets/video/Video 2.mp4" preload="auto" loop playsinline
+              webkit-playsinline x5-playsinline autoplay muted></video>
+          </div>
+          <div class="item">
+            <video class="bg-video bg-video-night-rain" src="./assets/video/Video 3.mp4" preload="auto" loop playsinline
+              webkit-playsinline x5-playsinline autoplay muted></video>
+          </div>
+          <div class="item">
+            <video class="bg-video bg-video-night-rain" src="./assets/video/Video 4.mp4" preload="auto" loop playsinline
+              webkit-playsinline x5-playsinline autoplay muted></video>
+          </div>
+
+        </div>
+      </div>
+      <div class="step-info step-1 active">
+        <h2 class="title title-primary">Lofi.co: Focus Music You Can Vibe With!</h2>
+        <div class="des text-center">Welcome to lofi.co. Let us show you around!</div>
+      </div>
+      <div class="step-info step-2">
+        <h2 class="title title-primary">The Perfect Playlist
+          With One Click</h2>
+        <p class="des">Hit play and get into the zone instantly. No ads. No distracting lyrics.</p>
+        <p class="des">3 Stations to suit your mood: chill, jazzy or sleepy.</p>
+      </div>
+      <div class="step-info step-3">
+        <h2 class="title title-primary">Craft Your Focus Environment</h2>
+        <p class="des">Would you rather get it done in the cafe, or escape to the beach? Lofi.co gives you both with
+          interactive artworks.</p>
+        <p class="des">Basic users can access 2 artworks, while premium users have exclusive access to a growing library
+          of 13+ illustrations.</p>
+      </div>
+      <div class="step-info step-4">
+        <h2 class="title title-primary">Cut Out Distractions
+          With Peaceful Sounds</h2>
+        <p class="des">Drown out even the noisiest neighbour with soothing background sounds. Each artwork comes with
+          adjustable sounds like
+          rain, waves or birds. Some sounds change the scene’s visuals.</p>
+        <p class="des">Basic users get 3 sound effects. Premium users can mix and match 12+ sounds.</p>
+      </div>
+      <div class="step-info step-5">
+        <h2 class="title title-primary">The Focus Zone (Premium)</h2>
+        <p class="des">Deadline coming up? The Focus Zone lets you stay on track by gathering the best focus tools in
+          one place - away from
+          your distracting smartphone.</p>
+        <p class="des">
+          - Pomodoro timer: get more done in less time (without burning out)<br />
+          - Notepad: never let a thought disappear<br />
+          - Time logger: track your progress<br />
+          - To-do list: always know what to do next
+        </p>
+        <div class="text-center">
+          <button class="btn btn-primary" onclick="openSignUp()">next</button>
+        </div>
+      </div>
+      <button class="btn btn-primary tutorial-btn">take tour</button>
+      <button class="btn btn-link btn-s" onclick="closeModal()">leave tutorial</button>
+    </div>
+  </div>
+
+  <!-- code -->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

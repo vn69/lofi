@@ -1,0 +1,151 @@
+:root {
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --primary: #f3a952;
+  --secondary: #6c757d;
+  --light: #ececec;
+  --dark: #343a40;
+  --black: #232323;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.5;
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+}
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.relative {
+  position: relative;
+}
+
+/* button */
+.btn {
+  border-radius: 33px;
+  border: 1px solid white;
+  background-color: rgba(255, 255, 255, 0.068);
+  color: var(--white);
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+
+  display: inline-block;
+  padding: 14px 26px;
+  cursor: pointer;
+  transition: all 0.3s;
+  will-change: opacity;
+}
+.btn-primary {
+  color: black;
+  border: none;
+  background-color: var(--primary);
+}
+
+.btn-s {
+  font-size: 14px;
+  padding: 8px 16px;
+}
+
+.btn-link {
+  border: none;
+  background-color: transparent;
+}
+.btn:hover {
+  opacity: 0.5;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: auto;
+}
+.container-fluid {
+  max-width: 100%;
+}
+
+.hover {
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+.hover:hover {
+  opacity: 0.5;
+}
+
+input {
+  background-color: transparent;
+  padding: 12px 12px;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  margin: 0 5px;
+  border-bottom: 2px solid rgb(49, 49, 49);
+}
+.input-group {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+.input-group:last-child > input {
+  border: none;
+}
+.input-group input + div {
+  width: 4px;
+  transition: 0.3s ease;
+}
+.input-group input:focus + div {
+  background-color: var(--primary);
+}
+
+.hide-when-zoom.hide {
+  display: none;
+}
+.hide-when-zoom.hide.ml-auto {
+  display: block;
+  margin-left: auto;
+}
+
+.col-6 {
+  width: 50%;
+}
+.row {
+  display: flex;
+}
+.h-100 {
+  height: 100%;
+}
